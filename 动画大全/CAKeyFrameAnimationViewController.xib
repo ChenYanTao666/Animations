@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CAKeyFrameAnimationViewController">
+            <connections>
+                <outlet property="imagev" destination="YBm-HS-Wt0" id="SYp-dK-bEW"/>
+                <outlet property="paly" destination="Kvb-GR-nsJ" id="53p-gT-QKO"/>
+                <outlet property="stop" destination="JWv-rG-844" id="nV7-it-01i"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YZ2-8V-4Qc">
+                    <rect key="frame" x="16" y="10" width="31" height="30"/>
+                    <state key="normal" title="返回"/>
+                    <connections>
+                        <action selector="blackAction:" destination="-1" eventType="touchUpInside" id="DiT-fE-qFz"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kvb-GR-nsJ">
+                    <rect key="frame" x="52" y="48" width="31" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="开始"/>
+                    <connections>
+                        <action selector="play:" destination="-1" eventType="touchUpInside" id="5em-NJ-gk5"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JWv-rG-844">
+                    <rect key="frame" x="247" y="48" width="31" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="暂停"/>
+                    <connections>
+                        <action selector="stop:" destination="-1" eventType="touchUpInside" id="eUj-7m-37U"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="美女1.png" translatesAutoresizingMaskIntoConstraints="NO" id="YBm-HS-Wt0">
+                    <rect key="frame" x="137" y="377.5" width="100" height="150.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="5r9-h9-YTg"/>
+                        <constraint firstAttribute="width" secondItem="YBm-HS-Wt0" secondAttribute="height" multiplier="325:489" id="oPS-gI-BzL"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="YZ2-8V-4Qc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="8v0-qD-fM6"/>
+                <constraint firstAttribute="bottom" secondItem="YBm-HS-Wt0" secondAttribute="bottom" constant="139" id="9KW-Pq-w6p"/>
+                <constraint firstItem="YZ2-8V-4Qc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="K3y-gO-VOQ"/>
+                <constraint firstItem="YBm-HS-Wt0" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="oRB-b2-8vP"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="美女1.png" width="325" height="489"/>
+    </resources>
+</document>

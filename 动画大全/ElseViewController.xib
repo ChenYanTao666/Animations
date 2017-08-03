@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ElseViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" tag="10000" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xTA-0s-49H">
+                    <rect key="frame" x="156" y="127" width="62" height="30"/>
+                    <state key="normal" title="基础动画"/>
+                    <connections>
+                        <action selector="buttonAction:" destination="-1" eventType="touchUpInside" id="afF-1e-gci"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="10001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pci-kA-5dz">
+                    <rect key="frame" x="148.5" y="187" width="77" height="30"/>
+                    <state key="normal" title="关键帧动画"/>
+                    <connections>
+                        <action selector="buttonAction:" destination="-1" eventType="touchUpInside" id="BAq-bI-PW0"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="10002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ohP-69-LYZ">
+                    <rect key="frame" x="164" y="247" width="46" height="30"/>
+                    <state key="normal" title="组动画"/>
+                    <connections>
+                        <action selector="buttonAction:" destination="-1" eventType="touchUpInside" id="PFQ-ii-eCE"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="10004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kcG-84-h7w">
+                    <rect key="frame" x="156" y="367" width="62" height="30"/>
+                    <state key="normal" title="仿射变换"/>
+                    <connections>
+                        <action selector="buttonAction:" destination="-1" eventType="touchUpInside" id="ffO-to-kmn"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="10003" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y9V-pr-gWe">
+                    <rect key="frame" x="156" y="307" width="62" height="30"/>
+                    <state key="normal" title="过渡动画"/>
+                    <connections>
+                        <action selector="buttonAction:" destination="-1" eventType="touchUpInside" id="Axb-QX-O8H"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="10005" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zg2-hg-wz4">
+                    <rect key="frame" x="156" y="427" width="62" height="30"/>
+                    <state key="normal" title="综合案例"/>
+                    <connections>
+                        <action selector="buttonAction:" destination="-1" eventType="touchUpInside" id="UzO-dZ-wlC"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ru3-Jn-1lu">
+                    <rect key="frame" x="40" y="66" width="31" height="30"/>
+                    <state key="normal" title="返回"/>
+                    <connections>
+                        <action selector="black:" destination="-1" eventType="touchUpInside" id="IAB-Do-y6L"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="xTA-0s-49H" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="127" id="2OE-h5-x2z"/>
+                <constraint firstItem="zg2-hg-wz4" firstAttribute="top" secondItem="kcG-84-h7w" secondAttribute="bottom" constant="30" id="51d-zK-HI6"/>
+                <constraint firstItem="Ru3-Jn-1lu" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="66" id="HgS-cN-PoD"/>
+                <constraint firstItem="xTA-0s-49H" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="INp-Cn-9Ra"/>
+                <constraint firstItem="pci-kA-5dz" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Jml-gr-Yw9"/>
+                <constraint firstItem="ohP-69-LYZ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Q2h-aH-hcz"/>
+                <constraint firstItem="kcG-84-h7w" firstAttribute="top" secondItem="y9V-pr-gWe" secondAttribute="bottom" constant="30" id="WrQ-yY-LKv"/>
+                <constraint firstItem="y9V-pr-gWe" firstAttribute="top" secondItem="ohP-69-LYZ" secondAttribute="bottom" constant="30" id="cgo-qx-awF"/>
+                <constraint firstItem="pci-kA-5dz" firstAttribute="top" secondItem="xTA-0s-49H" secondAttribute="bottom" constant="30" id="hU0-WT-Rs2"/>
+                <constraint firstItem="kcG-84-h7w" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="i3B-Na-NMa"/>
+                <constraint firstItem="zg2-hg-wz4" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="j6E-oD-ldN"/>
+                <constraint firstItem="ohP-69-LYZ" firstAttribute="top" secondItem="pci-kA-5dz" secondAttribute="bottom" constant="30" id="nD8-5K-8Yh"/>
+                <constraint firstItem="y9V-pr-gWe" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="o6o-z0-2Iw"/>
+                <constraint firstItem="Ru3-Jn-1lu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="s5A-kS-est"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
